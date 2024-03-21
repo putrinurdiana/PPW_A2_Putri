@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                background-color: lightblue;
+            }
+            .container {
+                border: 1px solid black;
+                display: flex; 
+                /* flex-direction: row;
+                flex-wrap: wrap; */
+                flex-flow: row wrap;
+                justify-content: center;
+                align-content: center;
+                height: 90px;
+                gap: 20px;
+            }
+            .container div {
+                border: 1px solid black;
+                margin: 5px;
+                padding: 5px;
+                background-color: white;
+                width: 100px;
+
+            }
+            .flex-container {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                padding: o;
+                margin: 0;
+                list-style: none;
+            }
+            .flex-item {
+                background-color: tomato;
+                padding: 5px;
+                width: 200px;
+                height: 150px;
+                margin-top: 10px;
+                line-height: 150px;
+                color: white;
+                font-weight: bold;
+                font-size: 3em;
+                text-align: center;
+            }
+            .wrapper {
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+            .wrapper > * {
+                padding: 10px;
+                flex: 1 100%;
+            }
+            .header {
+                background: tomato;
+            }
+            .footer {
+                background: lightgreen;
+            }
+            .main {
+                text-align: left;
+                background: deepskyblue;
+            }
+            .aside-1 {
+                background: gold;
+            }
+            .aside-2 {
+                background: hotpink;
+            }
+            @media all and (min-width: 600px) {
+                .aside { flex: 1 0 0; }
+            }
+            @media all and (min-width: 800px) {
+                .main { flex: 3 0px; }
+                .aside-1 { order: 1; }
+                .main { order: 2; }
+                .aside-2 { order: 3; }
+                .footer { order: 4;} 
+            }
+            body {
+                padding: 2em;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <div>Item 1</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+            <div>Item 4</div>
+            <div>Item 5</div>
+            <div>Item 6</div>
+        </div>
+
+
+        <ul class="flex-container">
+            <li class="flex-item">1</li>
+            <li class="flex-item">2</li>
+            <li class="flex-item">3</li>
+            <li class="flex-item">4</li>
+            <li class="flex-item">5</li>
+            <li class="flex-item">6</li>
+        </ul><br><br>
+
+        <div class="wrapper">
+            <header class="header">Header</header>
+            <article class="main">
+                <p>Bagian ini mencakup penggunaan CSS untuk mengubah tampilan standar pada halaman web 
+                    Anda. Tidak semua tag style digunakan disini karena jumlahnya sangat banyak, silakan Anda 
+                    cari referensi lain sebagai tambahan untuk mempelajari CSS. Seperti biasa, simpan file-file Anda 
+                    dalam folder Anda sendiri, kemudian cobalah langsung untuk melihat hasil setiap contoh, lalu 
+                    ubahlah isinya untuk melihat variasi tampilannya yang memungkinkan</p>
+            </article>
+            <aside class="aside aside-1">Aside 1</aside>
+            <aside class="aside aside-2">Aside 2</aside>
+        </div>     
+    </body>
+</html>
