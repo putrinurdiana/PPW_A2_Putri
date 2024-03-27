@@ -1,0 +1,115 @@
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+    padding: 0px; /* Jarak sejajar kiri, kanan, dan bawah */
+    /* margin: 20px; */
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 900px; /* Lebar maksimum untuk desktop */
+    margin: 0 auto;
+    padding: 0; /* Jarak sejajar kiri, kanan, dan bawah */
+    background-color:white;
+    border-radius: 10px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    overflow: hidden;
+    flex-direction: row;
+  }
+
+  .card {
+    margin: 10px; /* Jarak antara img dan card content */
+    padding: 25px;
+    /* background-color: black; */
+  }
+
+  .content {
+    color: hsl(214, 17%, 51%);
+  }
+  .content h1 {
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+  }
+  .content p {
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 15px;
+  }
+  .img {
+    width: 100%;
+    /* height: ; */
+    object-fit: cover;
+    display: block;
+  }
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+    color: hsl(217, 19%, 35%);
+  }
+  .info {
+    display: row;
+    line-height: 4px;
+    margin-left: 10px;
+  }
+  .info p {
+    font-weight: 500;
+    color: hsl(214, 17%, 51%)
+  }
+  .fotoProfile {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .share {
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    margin-left: auto;
+    margin-right:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .background img {
+    width: 18px;
+  }
+  @media screen and (max-width: 500px){
+    .container {
+      width: 80%;
+      display: block;
+      flex-direction: column;
+    }
+    .card {
+      padding: 10px;
+    }
+    .content h1 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    .content p {
+      font-size: 13px;
+    }
+    .info {
+      line-height: 7px;
+    }
+    .info h2 {
+      font-size: 14px;
+    }
+    .info p {
+      font-size: 13px;
+    }
+  } 
+    
